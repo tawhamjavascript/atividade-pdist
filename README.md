@@ -2,7 +2,7 @@
 1. Baixe o projeto
 2. execute na raiz do projeto: mvn install
 3. execute na raiz do projeto: docker build --tag=wildfly-app .
-4. execute: docker run -it wildfly-app (estará rodando em http://localhost:8080/pratica-ejb-1.0-SNAPSHOT/)
+4. execute: docker run -p 8080:8080 -it wildfly-app (estará rodando em http://localhost:8080/pratica-ejb-1.0-SNAPSHOT/)
 5. se alterar o código, mate o processo rodando a imagem e repita os passos 2 a 4 a cada alteração
 
 # Se fizer na mão, config do standalone.xml para que essa prática dê certo, é necessário colocar dentro da tag <datasources>:
